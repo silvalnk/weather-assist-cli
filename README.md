@@ -1,10 +1,8 @@
-# weather-assist
+# Weather Assist CLI
 
 > Temperatura atual de uma cidade no terminal, em **Ruby**.  
 > [Open-Meteo](https://open-meteo.com/), sem chave de API. Sem cache e sem previsão de vários dias.  
 > Skills e subagentes no Cursor e no Kiro.
-
-Repositório: [silvalnk/weather-assist-cli](https://github.com/silvalnk/weather-assist-cli)
 
 ![weather-assist: help e temperatura atual de São Paulo e Rio de Janeiro](docs/images/cli.png)
 
