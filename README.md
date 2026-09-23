@@ -1,6 +1,19 @@
 # weather-assist
 
-CLI Ruby que mostra a temperatura atual de uma cidade. A fonte é a [Open-Meteo](https://open-meteo.com/), sem chave de API. Só biblioteca padrão (Ruby 3.2 ou mais recente).
+> Temperatura atual de uma cidade no terminal, em **Ruby**.  
+> [Open-Meteo](https://open-meteo.com/), sem chave de API. Sem cache e sem previsão de vários dias.  
+> Skills e subagentes no Cursor e no Kiro.
+
+Repositório: [silvalnk/weather-assist-cli](https://github.com/silvalnk/weather-assist-cli)
+
+![weather-assist: help e temperatura atual de São Paulo e Rio de Janeiro](docs/images/cli.png)
+
+| | |
+|--|--|
+| Stack | Ruby 3.2+, stdlib, CLI `weather-assist` |
+| Fonte | Open-Meteo (geocoding + forecast atual) |
+| Saída | cidade, °C, sensação térmica, condição |
+| Fora de escopo | chave de API, cache, previsão de vários dias, gems, interface web |
 
 ## Uso
 
@@ -11,13 +24,7 @@ ruby bin/weather-assist now "São Paulo"
 ruby bin/weather-assist now --city "Rio de Janeiro"
 ```
 
-Saída (inglês):
-
-```text
-São Paulo, Brasil
-22.4 °C (feels like 21.1 °C)
-Clear
-```
+A saída é em inglês: cidade resolvida, °C, sensação térmica e condição. O print acima é uma sessão real da CLI.
 
 Testes, sem rede:
 
